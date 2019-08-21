@@ -12,6 +12,11 @@ class Student
     @id = id
   end
 
+  def create(info_hash)
+    info_hash.each{|key, value| self.send(("#{key}="), value)}
+    save
+  end
+
   def self.create_table
     sql = <<-SQL
       CREATE TABLE IF NOT EXISTS students(
