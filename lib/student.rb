@@ -20,7 +20,7 @@ class Student
         grade FLOAT
       )
       SQL
-    DB:[:conn].execute(sql)
+    DB[:conn].execute(sql)
   end
 
 end
