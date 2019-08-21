@@ -12,8 +12,8 @@ class Student
     @id = nil
   end
 
-  def self.create(name, grade)
-    new_student = Student.new(name:name, grade:grade)
+  def self.create(inf_hash)
+    new_student = Student.new(inf_hash:name, inf_hash:grade)
     new_student.save
     new_student
   end
