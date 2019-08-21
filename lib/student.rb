@@ -12,7 +12,7 @@ class Student
     @id = id
   end
 
-  def create(info_hash)
+  def self.create(info_hash)
     info_hash.each{|key, value| self.send(("#{key}="), value)}
     save
   end
