@@ -1,16 +1,16 @@
 class Student
 
   # Remember, you can access your database connection anywhere in this class
-  #  with DB[:conn]  
+  #  with DB[:conn]
 
   attr_accessor :name, :grade
-  attr_reader :id 
+  attr_reader :id
 
   def initialize(name, grade, id = null)
     @name = name
     @grade = grade
-    @id = id 
+    @id = id
   end
-  
-  
+
+
 end
