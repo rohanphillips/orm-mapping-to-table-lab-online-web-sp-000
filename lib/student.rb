@@ -13,6 +13,7 @@ class Student
   end
 
   def self.create(info_hash)
+    new_student = Student.new()
     info_hash.each{|key, value| self.send(("#{key}="), value)}
     save
   end
