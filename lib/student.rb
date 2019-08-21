@@ -13,9 +13,9 @@ class Student
   end
 
   def self.create(info_hash)
-    new_student = Student.new()
-    info_hash.each{|key, value| self.send(("#{key}="), value)}
-    save
+    new_student = Student.new(name, grade)
+    new_student.save
+    new_student
   end
 
   def self.create_table
